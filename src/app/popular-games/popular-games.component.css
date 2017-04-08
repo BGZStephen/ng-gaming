@@ -1,0 +1,33 @@
+h2 {
+  width: 100%;
+}
+
+.games-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.games-item {
+  display: flex;
+  align-items: center;
+  width: 49%;
+  margin: 5px 0;
+  background: #369;
+}
+
+.game-image-container {
+  height: 100%;
+  margin-right: 20px;
+}
+
+.game-description-container {
+  padding: 8px;
+  color: white;
+}
+
+img {
+  height: 100%;
+}

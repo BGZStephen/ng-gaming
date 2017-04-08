@@ -13,6 +13,8 @@ import { PlaystationFourComponent } from './pages/playstation-four/playstation-f
 import { NintendoSwitchComponent } from './pages/nintendo-switch/nintendo-switch.component';
 import { ReleaseDatesComponent } from './pages/release-dates/release-dates.component';
 import { FooterComponent } from './footer/footer.component';
+import { PopularGamesComponent } from './popular-games/popular-games.component';
+import { CharLimit } from "./pipes/charlimit"
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { FooterComponent } from './footer/footer.component';
     PlaystationFourComponent,
     NintendoSwitchComponent,
     ReleaseDatesComponent,
-    FooterComponent
+    FooterComponent,
+    PopularGamesComponent,
+    CharLimit
   ],
   imports: [
     BrowserModule,

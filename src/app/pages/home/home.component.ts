@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { GameSearchService } from "../../services/game-search.service"
+import { PopularGamesComponent } from "../../popular-games/popular-games.component"
+
 
 @Component({
   selector: 'app-home',
@@ -8,16 +9,9 @@ import { GameSearchService } from "../../services/game-search.service"
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private gameSearch: GameSearchService) { }
-
-  games = []
+  constructor() { }
 
   ngOnInit() {
-    this.gameSearch.getPopular()
-    .subscribe(games => {
-      console.log(games)
-      games = games;
-    })
-  }
 
+  }
 }
