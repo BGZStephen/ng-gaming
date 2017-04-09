@@ -6,14 +6,18 @@ import { router } from "./app.routes"
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { HomeComponent } from "./pages/home/home.component"
+import { HomeComponent } from "./pages/home/home.component";
+import { NewsTickerComponent } from './news-ticker/news-ticker.component';
+import { ReviewsCarouselComponent } from './reviews-carousel/reviews-carousel.component'
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    NewsTickerComponent,
+    ReviewsCarouselComponent
   ],
   imports: [
     BrowserModule,

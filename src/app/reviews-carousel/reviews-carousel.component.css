@@ -1,0 +1,46 @@
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-list {
+  list-style: none;
+  width: 300%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-item {
+  animation: carousel-container 25s infinite;
+  float: left;
+  position: relative;
+  width: 33.333%;
+}
+
+.carousel-item-image {
+  width: 100%;
+}
+
+.carousel-item-heading {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  text-align: center;
+}
+
+.carousel-item-description {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  text-align: center;
+}
+
+@keyframes carousel-container{
+    0%      { left: 0%; }
+    30%     { left: 0%; }
+    33.33%  { left: -33.333%; }
+    63.33%  { left: -33.333%; }
+    66.66%  { left: -66.666%; }
+    96.66%  { left: -66.666%; }
+    100%    { left: 0%; }
+}

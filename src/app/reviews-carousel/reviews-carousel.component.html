@@ -1,0 +1,9 @@
+<div class="carousel-container">
+  <ul class="carousel-list">
+    <li class="carousel-item" *ngFor="let item of carouselItems">
+      <img class="carousel-item-image" src="{{item.imgUrl}}">
+      <h3 class="carousel-item-heading">{{item.heading}}</h3>
+      <p class="carousel-item-description">{{item.description}}</p>
+    </li>
+  </ul>
+</div> <!-- CAROUSEL CONTAINER END -->

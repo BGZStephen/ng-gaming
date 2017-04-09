@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PopularGamesComponent } from "../../popular-games/popular-games.component"
-
 
 @Component({
   selector: 'app-home',
