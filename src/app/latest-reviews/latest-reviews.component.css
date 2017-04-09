@@ -1,0 +1,49 @@
+.latest-reviews-container {
+  margin-top: 20px;
+}
+
+.latest-reviews-heading {
+  background: black;
+  width: 100%;
+}
+
+.sub-heading {
+  background-image: linear-gradient(to top, #C43E2F, #D16428);
+  border-radius: 0px 100px 0px 0px / 0px 150px 0px 0px;
+  color: #ddd;
+  font-weight: 600;
+  padding: 7px 0 5px 10px;
+  text-transform: uppercase;
+  width: 70%;
+}
+
+.sub-heading--rounded {
+
+}
+
+.latest-reviews-item-container {
+  padding: 17px;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.latest-reviews-item {
+  margin-bottom: 20px;
+}
+
+.latest-reviews-item-image {
+  width: 100%;
+}
+
+.latest-reviews-item-heading {
+  color: #D16428;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.latest-reviews-item-description {
+  color: #555;
+  font-size: 0.8em;
+  margin-right: 5px;
+}

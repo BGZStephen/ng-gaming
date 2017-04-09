@@ -1,0 +1,13 @@
+<div class="latest-reviews-container">
+  <div class="latest-reviews-heading">
+    <p class="sub-heading sub-heading--rounded">Latest Reviews</p>
+  </div>
+  <div class="latest-reviews-item-container">
+    <div class="latest-reviews-item" *ngFor="let review of latestReviews">
+      <img class="latest-reviews-item-image" src="{{review.imgUrl}}">
+      <h4 class="latest-reviews-item-heading">{{review.heading}}</h4>
+      <p class="fa fa-calendar latest-reviews-item-description latest-reviews-item-description-date">  {{review.date}}</p>
+      <p class="fa fa-comment latest-reviews-item-description latest-reviews-item-description-comment">  {{review.comments}}</p>
+    </div>
+  </div>
+</div>

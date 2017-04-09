@@ -8,7 +8,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from "./pages/home/home.component";
 import { NewsTickerComponent } from './news-ticker/news-ticker.component';
-import { ReviewsCarouselComponent } from './reviews-carousel/reviews-carousel.component'
+import { ReviewsCarouselComponent } from './reviews-carousel/reviews-carousel.component';
+import { LatestReviewsComponent } from './latest-reviews/latest-reviews.component'
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ReviewsCarouselComponent } from './reviews-carousel/reviews-carousel.co
     NavbarComponent,
     HomeComponent,
     NewsTickerComponent,
-    ReviewsCarouselComponent
+    ReviewsCarouselComponent,
+    LatestReviewsComponent
   ],
   imports: [
     BrowserModule,
