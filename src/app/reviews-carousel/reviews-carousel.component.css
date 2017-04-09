@@ -22,17 +22,31 @@
 }
 
 .carousel-item-heading {
+  animation: carousel-item-heading 25s infinite;
+  background: black;
+  color: #D16428;
+  display: block;
+  font-size: 0.8em;
+  left: 12px;
+  padding: 8px 8px 6px;
   position: absolute;
-  top: 12px;
-  left: 15px;
   text-align: center;
+  text-transform: uppercase;
+  top: 12px;
 }
 
 .carousel-item-description {
-  position: absolute;
+  animation: carousel-item-description 25s infinite;
+  background: black;
   bottom: 15px;
-  right: 15px;
+  color: #ddd;
+  display: block;
+  font-size: 0.8em;
+  padding: 8px 8px 6px;
+  position: absolute;
+  right: 10px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 @keyframes carousel-container{
@@ -43,4 +57,34 @@
     66.66%  { left: -66.666%; }
     96.66%  { left: -66.666%; }
     100%    { left: 0%; }
+}
+
+@keyframes carousel-item-heading{
+    0%      { opacity: 0; }
+    5%      { opacity: 1; }
+    25%     { opacity: 1; }
+    30%     { opacity: 0; }
+    33.33%  { opacity: 0; }
+    38.33%  { opacity: 1; }
+    58.33%  { opacity: 1; }
+    63.33%  { opacity: 0; }
+    66.66%  { opacity: 0; }
+    69.66%  { opacity: 1; }
+    91.66%     { opacity: 1; }
+    100%    { opacity: 0; }
+}
+
+@keyframes carousel-item-description{
+    0%      { opacity: 0; }
+    5%      { opacity: 1; }
+    25%     { opacity: 1; }
+    30%     { opacity: 0; }
+    33.33%  { opacity: 0; }
+    38.33%  { opacity: 1; }
+    58.33%  { opacity: 1; }
+    63.33%  { opacity: 0; }
+    66.66%  { opacity: 0; }
+    69.66%  { opacity: 1; }
+    91.66%     { opacity: 1; }
+    100%    { opacity: 0; }
 }
