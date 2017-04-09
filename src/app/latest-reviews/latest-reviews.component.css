@@ -9,7 +9,6 @@
 
 .sub-heading {
   background-image: linear-gradient(to top, #C43E2F, #D16428);
-  border-radius: 0px 100px 0px 0px / 0px 150px 0px 0px;
   color: #ddd;
   font-weight: 600;
   padding: 7px 0 5px 10px;
@@ -18,7 +17,7 @@
 }
 
 .sub-heading--rounded {
-
+  border-radius: 0px 100px 0px 0px / 0px 150px 0px 0px;
 }
 
 .latest-reviews-item-container {
