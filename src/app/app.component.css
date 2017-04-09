@@ -1,0 +1,7 @@
+.main-container {
+  background-image: url("/assets/img/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 15px 15px;
+  width: 100%;
+}
