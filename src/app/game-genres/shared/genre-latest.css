@@ -38,9 +38,10 @@
 }
 
 .genre-item-description {
+  width: 100%;
   color: #555;
   font-size: 0.8em;
-  margin: 15px 10px 15px 0;
+  margin: 5px 10px 5px 0;
 }
 
 .genre-sub-item-container {
@@ -51,17 +52,19 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .genre-sub-item-image {
   width: 90px;
   height: 90px;
-  margin-right: 5px;
+  margin-right: 10px;
+  margin-bottom: 5px;
 }
 
 .genre-sub-item-heading {
   color: #D16428;
-  width: calc(100% - 95px);
+  width: calc(100% - 100px);
   margin: 5px 0;
 }
 

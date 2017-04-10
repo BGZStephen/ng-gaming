@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GenreSearchService } from "../../../services/genre-search.service"
+import { GameSearchService } from "../../../services/game-search.service"
 
 @Component({
   selector: 'app-rpg-latest',
@@ -7,19 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RpgLatestComponent implements OnInit {
 
-  constructor() { }
-
   category = "RPG"
+  genreId = "12"
   games = {
-    primary: {imgUrl: "http://placehold.it/300x150", header: "Test Primary Header", date: "August 31, 2016", comments: "No comments", description: "This is a test description"},
+    primary: {},
     secondary: [
-      {imgUrl: "http://placehold.it/300x150", header: "Test Secondary Header #1", date: "August 31, 2016", comments: "No comments"},
-      {imgUrl: "http://placehold.it/300x150", header: "Test Secondary Header #2", date: "August 31, 2016", comments: "No comments"},
-      {imgUrl: "http://placehold.it/300x150", header: "Test Secondary Header #3", date: "August 31, 2016", comments: "No comments"},
-    ]
+    ],
   }
 
-
+  constructor(private genreSearch: GenreSearchService, private gameSearch: GameSearchService) {
+    this.genreSearch.getPopularByGenre(this.genreId)
+    .subscribe(res => {
+      this.games.primary = res[0]
+      console.log(this.games.primary)
+      for(let i = 1; i < 4; i++) {
+        this.games.secondary.push(res[i])
+      }
+    })
+  }
 
   ngOnInit() {
   }
