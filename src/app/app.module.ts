@@ -12,7 +12,8 @@ import { ReviewsCarouselComponent } from './reviews-carousel/reviews-carousel.co
 import { LatestReviewsComponent } from './latest-reviews/latest-reviews.component';
 import { RpgLatestComponent } from './game-genres/rpg/rpg-latest/rpg-latest.component';
 import { AdventureLatestComponent } from './game-genres/adventure/adventure-latest/adventure-latest.component';
-import { SportLatestComponent } from './game-genres/sport/sport-latest/sport-latest.component'
+import { SportLatestComponent } from './game-genres/sport/sport-latest/sport-latest.component';
+import { StrategyLatestComponent } from './game-genres/strategy/strategy-latest/strategy-latest.component'
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { SportLatestComponent } from './game-genres/sport/sport-latest/sport-lat
     LatestReviewsComponent,
     RpgLatestComponent,
     AdventureLatestComponent,
-    SportLatestComponent
+    SportLatestComponent,
+    StrategyLatestComponent
   ],
   imports: [
     BrowserModule,
