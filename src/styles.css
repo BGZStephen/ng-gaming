@@ -12,8 +12,9 @@
 .sub-heading {
   background-image: linear-gradient(to top, #C43E2F, #D16428);
   color: #ddd;
+  display: inline-block;
   font-weight: 600;
-  padding: 7px 0 5px 10px;
+  padding: 7px 20px 5px 10px;
   text-transform: uppercase;
 }
 
