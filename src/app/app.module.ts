@@ -6,6 +6,7 @@ import { router } from "./app.routes"
 
 import { AppComponent } from './app.component';
 import { GameSearchService } from "./services/game-search.service"
+import { ReviewSearchService } from "./services/review-search.service"
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from "./pages/home/home.component";
 import { NewsTickerComponent } from './news-ticker/news-ticker.component';
@@ -40,7 +41,7 @@ import { LatestGamesComponent } from './latest-games/latest-games.component'
     HttpModule,
     router
   ],
-  providers: [GameSearchService],
+  providers: [GameSearchService, ReviewSearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
