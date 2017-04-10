@@ -2,8 +2,8 @@
   <div class="featured-game-header">
     <p class="sub-heading sub-heading--rounded">Featured Game</p>
   </div>
-  <div class="featured-game-item">
-    <img class="featured-game-item-image" src="{{game.imgUrl}}">
-    <h4 class="featured-game-item-header">{{game.header}}</h4>
+  <div class="featured-game-item" *ngFor="let item of game">
+    <img class="featured-game-item-image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{item.cover.cloudinary_id}}">
+    <h4 class="featured-game-item-header">{{item.name}}</h4>
   </div>
 </div>

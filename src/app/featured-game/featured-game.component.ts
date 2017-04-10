@@ -8,10 +8,16 @@ import { GameSearchService } from "../services/game-search.service"
 })
 export class FeaturedGameComponent implements OnInit {
 
-  game = {imgUrl: "http://placehold.it/350x350", header: "Test Featured Game Header"}
+  game = []
 
   constructor(private gameSearch: GameSearchService) {
-
+    this.gameSearch.getPopular()
+    .subscribe(res => {
+      this.gameSearch.getGame(res[3].id)
+      .subscribe(res => {
+        this.game.push(res[0]);
+      })
+    })
   }
 
 

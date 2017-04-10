@@ -33,29 +33,8 @@ export class LatestGamesComponent implements OnInit {
       this.gameSearch.getGame(idString)
       .subscribe(res => {
         this.games = res
-        console.log(this.games[0])
-        console.log(this.games[1])
-        console.log(this.games[2])
-        console.log(this.games[3])
-        console.log(this.games[4])
-        console.log(this.games[5])
-        console.log(this.games[6])
-        console.log(this.games[7])
-        console.log(this.games[8])
-        console.log(this.games[9])
-        console.log(this.games[10])
       })
     })
-
-    // this.gameSearch.getRecentGames()
-    // .subscribe(res => {
-    //   for(let i = 0; i < 10; i++) {
-    //     this.gameSearch.getGame(res[i].id)
-    //     .subscribe(res => {
-    //       this.games.push(res[0])
-    //     })
-    //   }
-    // })
   }
 
 
