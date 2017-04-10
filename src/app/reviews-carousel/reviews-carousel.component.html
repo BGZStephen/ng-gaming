@@ -1,9 +1,9 @@
 <div class="carousel-container">
-  <ul class="carousel-list">
+  <ul class="carousel-list" *ngIf="carouselItems">
     <li class="carousel-item" *ngFor="let item of carouselItems">
-      <img class="carousel-item-image" src="{{item.imgUrl}}">
-      <h3 class="carousel-item-heading">{{item.heading}}</h3>
-      <p class="carousel-item-description">{{item.description}}</p>
+      <img class="carousel-item-image" src="https://images.igdb.com/igdb/image/upload/t_screenshot_big/{{item.cover.cloudinary_id}}">
+      <h3 class="carousel-item-heading">{{item.name}}</h3>
+      <p class="carousel-item-description">{{item.summary | slice:0:60}}...</p>
     </li>
   </ul>
 </div> <!-- CAROUSEL CONTAINER END -->

@@ -24,6 +24,12 @@ export class GameSearchService {
     .map(res => res.json())
   }
 
+  getRecentGames() {
+    let searchUrl = "https://igdbcom-internet-game-database-v1.p.mashape.com//games/?order=release_dates.date:desc"
+    return this.http.get(searchUrl, {headers: this.headers})
+    .map(res => res.json())
+  }
+
   getGenre(genre) {
     let searchUrl = "https://igdbcom-internet-game-database-v1.p.mashape.com/genres/"+genre+"?fields=*"
     return this.http.get(searchUrl, {headers: this.headers})
