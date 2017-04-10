@@ -8,7 +8,7 @@
   </div>
 </div> <!-- HEADER END -->
 <div class="navbar-container">
-  <ul class="navbar-list" [ngStyle]="toggleMenu()">
+  <ul class="navbar-list" (window:resize)="toggleMenu()" [ngStyle]="toggleMenu()">
     <li class="navbar-item"><a class="navbar-link navbar-link-active">Home</a></li>
     <li class="navbar-item"><a class="navbar-link">Features</a></li>
     <li class="navbar-item"><a class="navbar-link">Matches</a></li>

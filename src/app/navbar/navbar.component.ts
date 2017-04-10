@@ -9,16 +9,18 @@ export class NavbarComponent implements OnInit {
 
   constructor() { }
 
-  toggle: true;
+  toggle: false;
 
   ngOnInit() {
   }
 
   toggleMenu() {
-    if(this.toggle) {
+    if(screen.width > 768) {
+      return {'visibility':'visible', 'opacity': '1'}
+    } else if (this.toggle && (screen.width < 768)) {
       return {'visibility':'visible', 'opacity': '1'}
     } else {
-      return {'visibility':'hidden', 'opacity': '0'}
+      return {'visibility':'hidden', 'opacity': '0' }
     }
   }
 

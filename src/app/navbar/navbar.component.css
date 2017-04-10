@@ -74,3 +74,42 @@
   margin-left: auto;
   margin-right: 20px;
 }
+
+@media (min-width: 768px) {
+
+  .navbar-menu-toggle {
+    display: none;
+  }
+
+  .navbar-list {
+    background: none;
+    bottom: auto;
+    display: flex;
+    left: auto;
+    list-style: none;
+    opacity: 1;
+    padding: 10px 0;
+    position: absolute;
+    right: auto;
+    top: auto;
+    visibility: visible;
+    width: auto;
+  }
+
+  .navbar-link {
+    color: #ddd;
+    font-weight: 600;
+  }
+
+  .navbar-link-active {
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .logo {
+    display: block;
+    height: 70px;
+    margin: 5px 5px;
+    width: auto;
+  }
+}
