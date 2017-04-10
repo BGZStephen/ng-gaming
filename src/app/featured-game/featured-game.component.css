@@ -1,0 +1,32 @@
+.featured-game-container {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.featured-game-header {
+  background: black;
+  width: 100%;
+}
+
+.featured-game-item {
+  width: 100%;
+  position: relative;
+}
+
+.featured-game-item-image {
+  width: 100%;
+}
+
+.featured-game-item-header {
+  background: rgba(0,0,0,.8);
+  bottom: 5px;
+  color: #D16428;
+  display: block;
+  font-size: 1.2em;
+  left: 10px;
+  padding: 8px;
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  text-overflow: clip;
+}
