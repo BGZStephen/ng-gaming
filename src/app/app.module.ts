@@ -11,7 +11,8 @@ import { NewsTickerComponent } from './news-ticker/news-ticker.component';
 import { ReviewsCarouselComponent } from './reviews-carousel/reviews-carousel.component';
 import { LatestReviewsComponent } from './latest-reviews/latest-reviews.component';
 import { RpgLatestComponent } from './game-genres/rpg/rpg-latest/rpg-latest.component';
-import { AdventureLatestComponent } from './game-genres/adventure/adventure-latest/adventure-latest.component'
+import { AdventureLatestComponent } from './game-genres/adventure/adventure-latest/adventure-latest.component';
+import { SportLatestComponent } from './game-genres/sport/sport-latest/sport-latest.component'
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { AdventureLatestComponent } from './game-genres/adventure/adventure-late
     ReviewsCarouselComponent,
     LatestReviewsComponent,
     RpgLatestComponent,
-    AdventureLatestComponent
+    AdventureLatestComponent,
+    SportLatestComponent
   ],
   imports: [
     BrowserModule,

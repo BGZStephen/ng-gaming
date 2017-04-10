@@ -1,0 +1,22 @@
+<div class="genre-container">
+  <div class="genre-heading-container">
+    <p class="sub-heading sub-heading--rounded">Sport</p>
+  </div>
+  <div class="genre-content-container">
+    <div class="genre-main-item">
+      <img class="genre-main-item-image" src="{{sportGames.primary.imgUrl}}">
+      <h4 class="genre-main-item-heading">{{sportGames.primary.header}}</h4>
+      <p class="fa fa-calendar genre-main-item-description genre-item-description-date">  {{sportGames.primary.date}}</p>
+      <p class="fa fa-comment genre-main-item-description genre-item-description-comment">  {{sportGames.primary.comments}}</p>
+      <p class="genre-main-item-description">{{sportGames.primary.description}}</p>
+    </div>
+    <div class="genre-sub-item-container">
+      <div class="genre-sub-item" *ngFor="let game of sportGames.secondary">
+        <img class="genre-sub-item-image" src={{game.imgUrl}}>
+        <h4 class="genre-sub-item-heading">{{game.header}}</h4>
+        <p class="fa fa-calendar genre-item-description genre-item-description-date">  {{game.date}}</p>
+        <p class="fa fa-comment genre-item-description genre-item-description-comment">  {{game.comments}}</p>
+      </div>
+    </div>
+  </div>
+</div>

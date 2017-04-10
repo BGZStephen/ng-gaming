@@ -1,0 +1,65 @@
+/* GENRE COMPONENT - LAT£ST */
+
+.genre-container {
+  width: 100%;
+}
+
+.genre-heading-container {
+  background: black;
+  width: 100%;
+}
+
+.genre-content-container {
+  padding: 17px;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.genre-main-item {
+  margin-bottom: 20px;
+}
+
+.genre-main-item-image {
+  width: 100%;
+}
+
+.genre-main-item-heading {
+  color: #D16428;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.genre-main-item-description {
+  color: #555;
+  font-size: 0.8em;
+  margin: 5px 10px 5px 0;
+}
+
+.genre-item-description {
+  color: #555;
+  font-size: 0.8em;
+  margin: 15px 10px 15px 0;
+}
+
+.genre-sub-item-container {
+  width: 100%
+}
+
+.genre-sub-item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.genre-sub-item-image {
+  width: 90px;
+  height: 90px;
+  margin-right: 5px;
+}
+
+.genre-sub-item-heading {
+  color: #D16428;
+  width: calc(100% - 95px);
+  margin: 5px 0;
+}

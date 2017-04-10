@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-adventure-latest',
   templateUrl: './adventure-latest.component.html',
-  styleUrls: ['./adventure-latest.component.css']
+  styleUrls: ['../../shared/genre-latest.css']
 })
 export class AdventureLatestComponent implements OnInit {
 
