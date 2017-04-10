@@ -1,0 +1,9 @@
+<div class="latest-games-container">
+  <div class="latest-games-heading">
+    <p class="sub-heading sub-heading--rounded">Latest Games</p>
+  </div>
+  <div class="latest-games-item" *ngFor="let game of games">
+    <img class="latest-games-item-image" src="{{game.imgUrl}}">
+    <h4 class="latest-games-item-heading">{{game.header}}</h4>
+  </div>
+</div>
