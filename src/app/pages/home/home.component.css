@@ -4,6 +4,9 @@
   background: #F1F1F1;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  max-width: 1400px;
+  margin: 20px auto 0;
 }
 
 .left-content-container {
