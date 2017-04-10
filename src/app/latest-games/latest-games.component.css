@@ -23,3 +23,10 @@
 .latest-games-item-heading {
   width: calc(100% - 55px)
 }
+
+@media (min-width: 768px) {
+  .latest-games-item {
+    margin: 0px;
+    padding: 0 10px 10px 10px;
+  }
+}

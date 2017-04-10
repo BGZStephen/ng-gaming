@@ -16,6 +16,7 @@
 
 .latest-reviews-item {
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .latest-reviews-item-image {
@@ -32,4 +33,11 @@
   color: #555;
   font-size: 0.8em;
   margin-right: 5px;
+}
+
+@media (min-width: 768px) {
+  .latest-reviews-item {
+    padding: 5px;
+    width: calc(100% / 3);
+  }
 }

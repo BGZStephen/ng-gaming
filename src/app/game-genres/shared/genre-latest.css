@@ -10,10 +10,11 @@
 }
 
 .genre-content-container {
-  padding: 17px;
   background: white;
   display: flex;
   flex-wrap: wrap;
+  padding: 17px;
+  width: 100%;
 }
 
 .genre-main-item {
@@ -62,4 +63,17 @@
   color: #D16428;
   width: calc(100% - 95px);
   margin: 5px 0;
+}
+
+@media (min-width: 768px) {
+
+  .genre-container {
+    width: 100%;
+  }
+
+  :host {
+    width: 49%;
+    margin: 20px 0;
+  }
+
 }
