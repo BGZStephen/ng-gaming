@@ -3,7 +3,7 @@ import { Http, Headers } from "@angular/http"
 import "rxjs/Rx";
 
 @Injectable()
-export class GenreSearchService {
+export class BlogSearchService {
 
   constructor(private http: Http) { }
 
@@ -12,8 +12,8 @@ export class GenreSearchService {
       'Accept': 'application/json'
   })
 
-  getPopularByGenre(id) {
-    let searchUrl = "https://igdbcom-internet-game-database-v1.p.mashape.com/games/?fields=*&filter[genres][eq]="+id+"&limit=5&order=popularity:desc"
+  getLatest() {
+    let searchUrl = "https://igdbcom-internet-game-database-v1.p.mashape.com/pulses/?fields=*"
     return this.http.get(searchUrl, {headers: this.headers})
     .map(res => res.json())
   }

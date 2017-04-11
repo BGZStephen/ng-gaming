@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BlogSearchService } from "../services/blog-search.service"
 
 @Component({
   selector: 'app-latest-blog',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LatestBlogComponent implements OnInit {
 
-  constructor() { }
+  blogEntries = []
+
+  constructor(private blogSearch: BlogSearchService) {
+    this.blogSearch.getLatest()
+    .subscribe(res => {
+      this.blogEntries.push(res)
+      console.log(this.blogEntries)
+    })
+  }
 
   ngOnInit() {
   }

@@ -2,8 +2,9 @@
   <div class="latest-blog-heading">
     <p class="sub-heading sub-heading--rounded">Latest Blog Posts</p>
   </div>
-  <div class="latest-blog-item">
-    <!-- <img> -->
+  <div class="latest-blog-item" *ngFor="let blogEntry of blogEntries">
+    TEST
+    <img *ngIf="blogEntry.image" src="{{blogEntry.image}}">
     <h4 class="latest-blog-item-heading">Latest Blog Heading</h4>
     <p class="latest-blog-item-description">Latest Blog description</p>
     <hr class="blog-seperator">

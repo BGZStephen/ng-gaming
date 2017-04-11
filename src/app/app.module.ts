@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { GameSearchService } from "./services/game-search.service"
 import { ReviewSearchService } from "./services/review-search.service"
 import { GenreSearchService } from "./services/genre-search.service"
+import { BlogSearchService } from "./services/blog-search.service"
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from "./pages/home/home.component";
 import { NewsTickerComponent } from './news-ticker/news-ticker.component';
@@ -44,7 +45,7 @@ import { LatestBlogComponent } from './latest-blog/latest-blog.component'
     HttpModule,
     router
   ],
-  providers: [GameSearchService, ReviewSearchService, GenreSearchService],
+  providers: [GameSearchService, ReviewSearchService, GenreSearchService, BlogSearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
