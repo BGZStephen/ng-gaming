@@ -20,10 +20,8 @@ export class ReviewsCarouselComponent implements OnInit {
         .subscribe(res => {
           // console.log(res[0])
           this.carouselItems.push(res[0])
-          // console.log(this.carouselItems)
         })
       }
-      console.log("Carousel Complete")
     })
   }
 

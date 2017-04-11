@@ -18,7 +18,8 @@ import { AdventureLatestComponent } from './game-genres/adventure/adventure-late
 import { SportLatestComponent } from './game-genres/sport/sport-latest/sport-latest.component';
 import { StrategyLatestComponent } from './game-genres/strategy/strategy-latest/strategy-latest.component';
 import { FeaturedGameComponent } from './featured-game/featured-game.component';
-import { LatestGamesComponent } from './latest-games/latest-games.component'
+import { LatestGamesComponent } from './latest-games/latest-games.component';
+import { LatestBlogComponent } from './latest-blog/latest-blog.component'
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { LatestGamesComponent } from './latest-games/latest-games.component'
     SportLatestComponent,
     StrategyLatestComponent,
     FeaturedGameComponent,
-    LatestGamesComponent
+    LatestGamesComponent,
+    LatestBlogComponent
   ],
   imports: [
     BrowserModule,

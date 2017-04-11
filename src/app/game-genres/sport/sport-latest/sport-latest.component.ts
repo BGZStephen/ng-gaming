@@ -21,7 +21,6 @@ export class SportLatestComponent implements OnInit {
     this.genreSearch.getPopularByGenre(this.genreId)
     .subscribe(res => {
       this.games.primary = res[0]
-      console.log(this.games.primary)
       for(let i = 1; i < 4; i++) {
         this.games.secondary.push(res[i])
       }

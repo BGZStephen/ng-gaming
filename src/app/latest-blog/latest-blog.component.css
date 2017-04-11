@@ -1,0 +1,35 @@
+.latest-blog-container {
+  background: white;
+  width: 100%;
+}
+
+.latest-blog-heading {
+  background: black;
+  width: 100%;
+}
+
+.latest-blog-item {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.latest-blog-item-image {
+  width: 100%;
+}
+
+.latest-blog-item-heading {
+  color: #D16428;
+}
+
+.latest-blog-item-description {
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+.blog-seperator {
+  border-top: 2px solid #D16428;
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+}
