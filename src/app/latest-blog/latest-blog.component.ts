@@ -13,7 +13,7 @@ export class LatestBlogComponent implements OnInit {
   constructor(private blogSearch: BlogSearchService) {
     this.blogSearch.getLatest()
     .subscribe(res => {
-      this.blogEntries.push(res)
+      this.blogEntries = res
       console.log(this.blogEntries)
     })
   }
