@@ -3,7 +3,7 @@
     <p class="sub-heading sub-heading--rounded">Featured Game</p>
   </div>
   <div class="featured-game-item" *ngFor="let item of game">
-    <img class="featured-game-item-image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{item.cover.cloudinary_id}}">
+    <img class="featured-game-item-image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{item.cover.cloudinary_id}}" [routerLink]="['game/', item.id]">
     <h4 class="featured-game-item-header">{{item.name}}</h4>
   </div>
 </div>
