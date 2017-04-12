@@ -9,13 +9,16 @@ import { GameSearchService } from "../../services/game-search.service"
 })
 export class GameComponent implements OnInit {
 
+  game = []
+
   constructor(private activatedRoute: ActivatedRoute, private gameSearch: GameSearchService) {
     activatedRoute.params
     .map(params => params["id"])
     .subscribe((id) => {
       this.gameSearch.getGame(id)
       .subscribe(res => {
-        console.log(res)
+        this.game.push(res[0]);
+        console.log(this.game)
       })
     })
   }
