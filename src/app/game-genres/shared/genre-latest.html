@@ -4,15 +4,15 @@
   </div>
   <div class="genre-content-container">
     <div class="genre-main-item">
-      <img class="genre-main-item-image" *ngIf="games.primary.cover" src="https://images.igdb.com/igdb/image/upload/t_screenshot_med/{{games.primary.cover.cloudinary_id}}">
-      <h4 class="genre-main-item-heading">{{games.primary.name}}</h4>
+      <img class="genre-main-item-image" *ngIf="games.primary.cover" src="https://images.igdb.com/igdb/image/upload/t_screenshot_med/{{games.primary.cover.cloudinary_id}}" [routerLink]="['game/', games.primary.id]">
+      <h4 class="genre-main-item-heading" [routerLink]="['game/', games.primary.id]">{{games.primary.name}}</h4>
       <p class="fa fa-calendar genre-main-item-description genre-item-description-date">  {{games.primary.first_release_date | date}}</p>
       <p class="genre-main-item-description">{{games.primary.summary | slice:0:200}}...</p>
     </div>
     <div class="genre-sub-item-container">
       <div class="genre-sub-item" *ngFor="let game of games.secondary">
-        <img class="genre-sub-item-image" *ngIf="game.cover" src="https://images.igdb.com/igdb/image/upload/t_thumb/{{game.cover.cloudinary_id}}">
-        <h4 class="genre-sub-item-heading">{{game.name}}</h4>
+        <img class="genre-sub-item-image" *ngIf="game.cover" src="https://images.igdb.com/igdb/image/upload/t_thumb/{{game.cover.cloudinary_id}}" [routerLink]="['game/', game.id]">
+        <h4 class="genre-sub-item-heading" [routerLink]="['game/', game.id]">{{game.name}}</h4>
         <p class="genre-item-description genre-item-description-date">Release Date: {{game.first_release_date | date}}</p>
         <p class="genre-item-description genre-item-description-comment" *ngIf="game.summary">Summary: {{game.summary | slice:0:100}}...</p>
       </div>

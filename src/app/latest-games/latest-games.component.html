@@ -3,8 +3,8 @@
     <p class="sub-heading sub-heading--rounded">Latest Games</p>
   </div>
   <div class="latest-games-item" *ngFor="let game of games">
-    <img class="latest-games-item-image" *ngIf="game.cover" src="https://images.igdb.com/igdb/image/upload/t_cover_small/{{game.cover.cloudinary_id}}">
-    <img class="latest-games-item-image" *ngIf="!game.cover" src="http://placehold.it/128x45?text=No+Image+Available">
-    <h4 class="latest-games-item-heading">{{game.name}}</h4>
+    <img class="latest-games-item-image" *ngIf="game.cover" src="https://images.igdb.com/igdb/image/upload/t_cover_small/{{game.cover.cloudinary_id}}" [routerLink]="['game/', game.id]">
+    <img class="latest-games-item-image" *ngIf="!game.cover" src="http://placehold.it/128x45?text=No+Image+Available" [routerLink]="['game/', game.id]">
+    <h4 class="latest-games-item-heading" [routerLink]="['game/', game.id]">{{game.name}}</h4>
   </div>
 </div>
