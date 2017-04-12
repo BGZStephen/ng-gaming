@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from "@angular/router"
+import { ActivatedRoute } from "@angular/router";
+import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 import { GameSearchService } from "../../services/game-search.service"
 
 @Component({
@@ -7,11 +8,14 @@ import { GameSearchService } from "../../services/game-search.service"
   templateUrl: './game.component.html',
   styleUrls: ['./game.component.css']
 })
-export class GameComponent implements OnInit {
+export class GameComponent {
 
   game = []
+  videos = []
+  baseUrl:string = 'https://www.youtube.com/embed/';
 
-  constructor(private activatedRoute: ActivatedRoute, private gameSearch: GameSearchService) {
+  constructor(private activatedRoute: ActivatedRoute, private gameSearch: GameSearchService, private sanitizer: DomSanitizer) {
+
     activatedRoute.params
     .map(params => params["id"])
     .subscribe((id) => {
@@ -23,7 +27,7 @@ export class GameComponent implements OnInit {
     })
   }
 
-  ngOnInit() {
+  videoUrl(i) {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(this.baseUrl + this.game[0].videos[i].video_id)
   }
-
 }
