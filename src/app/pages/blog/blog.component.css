@@ -41,6 +41,7 @@
 
 .search-result-description {
   width: 100%;
+  margin: 10px 0;
 }
 
 @media (min-width: 768px) {
@@ -67,7 +68,6 @@
   .search-result-image {
     margin: 0;
   }
-
 
   .search-result-title {
     margin-bottom: 10px;

@@ -1,0 +1,13 @@
+<div class="content-container">
+  <div class="blog-item-container" *ngFor="let blog of searchResult">
+    <div class="blog-image-container">
+      <img class="blog-image" src="{{blog.image}}">
+    </div>
+    <div class="blog-details-container">
+      <h2 class="blog-title">{{blog.title}}</h2>
+      <p class="blog-entry">{{blog.summary}}</p>
+      <p class="blog-author"><strong>Author:</strong> {{blog.author}}</p>
+      <p class="blog-date"><strong>Published:</strong> {{blog.published_at | date}}</p>
+    </div>
+  </div>
+</div>

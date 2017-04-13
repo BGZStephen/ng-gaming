@@ -6,7 +6,7 @@
         <img class="search-result-image" *ngIf="!result.image" src="http://placehold.it/90x120?text=No+Image+Available" [routerLink]="['/blog', result.id]">
       </div>
       <div class="search-result-description-container">
-        <h2 class="search-result-title" [routerLink]="['/game', result.id]">{{result.title}}</h2>
+        <h2 class="search-result-title" [routerLink]="['/blog', result.id]">{{result.title}}</h2>
         <p class="search-result-description">{{result.summary | slice:0:280}}...</p>
       </div>
     </div>

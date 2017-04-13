@@ -18,6 +18,13 @@ export class BlogSearchService {
     .map(res => res.json())
   }
 
+  getBlogArticle(id) {
+    console.log("ID:", id)
+    let searchUrl = "https://igdbcom-internet-game-database-v1.p.mashape.com/pulses/"+id+"?fields=*"
+    return this.http.get(searchUrl, {headers: this.headers})
+    .map(res => res.json())
+  }
+
   getLatest20() {
     let searchUrl = "https://igdbcom-internet-game-database-v1.p.mashape.com/pulses/?fields=*&filter[image][exists]&filter[category][eq]=7&limit=20&order=published_at:desc"
     return this.http.get(searchUrl, {headers: this.headers})
