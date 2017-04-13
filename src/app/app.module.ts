@@ -24,7 +24,8 @@ import { LatestBlogComponent } from './latest-blog/latest-blog.component';
 import { GameComponent } from './pages/game/game.component';
 import { SearchComponent } from './pages/search/search.component';
 import { BlogComponent } from './pages/blog/blog.component';
-import { BlogItemComponent } from './pages/blog/blog-item.component'
+import { BlogItemComponent } from './pages/blog/blog-item.component';
+import { ReviewsComponent } from './pages/reviews/reviews.component'
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { BlogItemComponent } from './pages/blog/blog-item.component'
     GameComponent,
     SearchComponent,
     BlogComponent,
-    BlogItemComponent
+    BlogItemComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,

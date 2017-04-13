@@ -1,0 +1,16 @@
+<div class="content-container">
+  <div class="search-results-container">
+    <div class="search-result-item" *ngFor="let result of searchResults">
+      <div class="search-result-image-container">
+        <a href="{{result.reviewUrl}}" target="_blank"><img class="search-result-image" *ngIf="result.imgUrl" src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{result.imgUrl}}"></a>
+        <img class="search-result-image" *ngIf="!result.imgUrl" src="http://placehold.it/90x120?text=No+Image+Available">
+      </div>
+      <div class="search-result-description-container">
+        <a href="{{result.reviewUrl}}" target="_blank"><h2 class="search-result-title">{{result.name}}</h2></a>
+        <p class="search-result-description">{{result.review | slice:0:400}}...</p>
+        <p class="search-result-description">Author: {{result.author}}</p>
+        <p class="search-result-description">Last Updated: {{result.updated | date}}</p>
+      </div>
+    </div>
+  </div>
+</div>

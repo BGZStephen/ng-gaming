@@ -44,6 +44,11 @@
   margin: 10px 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 @media (min-width: 768px) {
 
   .search-results-container {
@@ -71,10 +76,12 @@
 
   .search-result-title {
     margin-bottom: 10px;
+    font-size: 1.5em;
   }
 
   .search-result-description {
     margin: 10px 0;
     line-height: 1.8;
+    font-size: 1.2em;
   }
 }
