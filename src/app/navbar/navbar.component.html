@@ -15,7 +15,7 @@
     <li class="navbar-item">
       <form>
         <input class="navbar-search" type="text" placeholder="Search..." #search (keyup)="0">
-        <p class="fa fa-search navbar-search-icon" *ngIf="search.value">
+        <a class="fa fa-search navbar-search-icon" *ngIf="search.value" [routerLink]="['/search', search.value]"></a>
       </form>
       </li>
   </ul>
