@@ -3,7 +3,7 @@
     <div class="search-result-item" *ngFor="let result of searchResults">
       <div class="search-result-image-container">
         <img class="search-result-image" *ngIf="result.cover" src="https://images.igdb.com/igdb/image/upload/t_cover_small/{{result.cover.cloudinary_id}}" [routerLink]="['/game', result.id]">
-        <img class="search-result-image" *ngIf="!result.cover" src="http://placehold.it/128x45?text=No+Image+Available" [routerLink]="['/game', result.id]">
+        <img class="search-result-image" *ngIf="!result.cover" src="http://placehold.it/90x120?text=No+Image+Available" [routerLink]="['/game', result.id]">
       </div>
       <div class="search-result-description-container">
         <h2 class="search-result-title" [routerLink]="['/game', result.id]">{{result.name}}</h2>
