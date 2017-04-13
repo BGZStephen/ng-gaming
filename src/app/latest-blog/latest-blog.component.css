@@ -15,11 +15,13 @@
 }
 
 .latest-blog-item-image {
+  cursor: pointer;
   width: 100%;
 }
 
 .latest-blog-item-heading {
   color: #D16428;
+  cursor: pointer;
 }
 
 .latest-blog-item-description {

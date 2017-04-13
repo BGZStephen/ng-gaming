@@ -3,8 +3,8 @@
     <p class="sub-heading sub-heading--rounded">Latest Blog Posts</p>
   </div>
   <div class="latest-blog-item" *ngFor="let blogEntry of blogEntries">
-    <img class="latest-blog-item-image" *ngIf="blogEntry.image" src="{{blogEntry.image}}">
-    <h4 class="latest-blog-item-heading">{{blogEntry.title}}</h4>
+    <img class="latest-blog-item-image" *ngIf="blogEntry.image" src="{{blogEntry.image}}" [routerLink]="['/blog', blogEntry.id]">
+    <h4 class="latest-blog-item-heading" [routerLink]="['/blog', blogEntry.id]">{{blogEntry.title}}</h4>
     <p class="latest-blog-item-description">Author: {{blogEntry.author}}</p>
     <hr class="blog-seperator">
   </div>

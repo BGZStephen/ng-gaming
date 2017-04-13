@@ -22,11 +22,13 @@
 }
 
 .genre-main-item-image {
+  cursor: pointer;
   width: 100%;
 }
 
 .genre-main-item-heading {
   color: #D16428;
+  cursor: pointer;
   width: 100%;
   margin: 5px 0;
 }

@@ -26,8 +26,9 @@
 }
 
 .search-result-image {
-  width: 100%;
+  cursor: pointer;
   padding: 10px;
+  width: 100%;
 }
 
 .search-result-description-container {
@@ -36,6 +37,7 @@
 }
 
 .search-result-title {
+  cursor: pointer;
   width: 100%;
 }
 

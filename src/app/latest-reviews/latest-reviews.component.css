@@ -20,13 +20,15 @@
 }
 
 .latest-reviews-item-image {
+  cursor: pointer;
   width: 100%;
 }
 
 .latest-reviews-item-heading {
   color: #D16428;
-  width: 100%;
+  cursor: pointer;
   margin: 5px 0;
+  width: 100%;
 }
 
 .latest-reviews-item-description {

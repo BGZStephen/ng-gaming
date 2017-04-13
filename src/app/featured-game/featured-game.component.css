@@ -5,6 +5,7 @@
 
 .featured-game-header {
   background: black;
+  cursor: pointer;
   width: 100%;
 }
 
@@ -14,6 +15,7 @@
 }
 
 .featured-game-item-image {
+  cursor: pointer;
   width: 100%;
 }
 

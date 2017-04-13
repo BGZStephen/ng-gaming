@@ -21,8 +21,9 @@
 }
 
 .blog-image {
-  width: 100%;
+  cursor: pointer;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .blog-details-container {
@@ -31,6 +32,7 @@
 }
 
 .blog-title {
+  cursor: pointer;
   display: block;
   margin-bottom: 10px;
 }

@@ -5,6 +5,7 @@
 
 .latest-games-heading {
   background: black;
+  cursor: pointer;
   width: 100%;
 }
 
@@ -17,8 +18,9 @@
 }
 
 .latest-games-item-image {
-  width: 50px;
+  cursor: pointer;
   margin-right: 5px;
+  width: 50px;
 }
 
 .latest-games-item-heading {
