@@ -1,0 +1,14 @@
+<div class="content-container">
+  <div class="search-results-container">
+    <div class="search-result-item" *ngFor="let result of searchResults">
+      <div class="search-result-image-container">
+        <img class="search-result-image" *ngIf="result.image" src="{{result.image}}" [routerLink]="['/blog', result.id]">
+        <img class="search-result-image" *ngIf="!result.image" src="http://placehold.it/90x120?text=No+Image+Available" [routerLink]="['/blog', result.id]">
+      </div>
+      <div class="search-result-description-container">
+        <h2 class="search-result-title" [routerLink]="['/game', result.id]">{{result.title}}</h2>
+        <p class="search-result-description">{{result.summary | slice:0:280}}...</p>
+      </div>
+    </div>
+  </div>
+</div>

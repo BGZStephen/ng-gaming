@@ -11,7 +11,7 @@
   <ul class="navbar-list" (window:resize)="toggleMenuResize()" [ngStyle]="toggleMenu()">
     <li class="navbar-item"><a class="navbar-link navbar-link-active" [routerLink]="['/']">Home</a></li>
     <li class="navbar-item"><a class="navbar-link">Reviews</a></li>
-    <li class="navbar-item"><a class="navbar-link">Blog</a></li>
+    <li class="navbar-item"><a class="navbar-link" [routerLink]="['/blog']">Blog</a></li>
     <li class="navbar-item">
       <form>
         <input class="navbar-search" type="text" placeholder="Search..." #search (keyup)="0">
