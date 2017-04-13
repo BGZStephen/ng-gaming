@@ -35,4 +35,10 @@ export class GameSearchService {
     return this.http.get(searchUrl, {headers: this.headers})
     .map(res => res.json())
   }
+
+  textSearch(string) {
+    let searchUrl = "https://igdbcom-internet-game-database-v1.p.mashape.com//games/?limit=50&fields=*&search="+string
+    return this.http.get(searchUrl, {headers: this.headers})
+    .map(res => res.json())
+  }
 }

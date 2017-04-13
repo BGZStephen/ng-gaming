@@ -1,7 +1,7 @@
 <div class="header-container">
   <div class="header">
     <div class="header-logo">
-      <img class="logo" src="/assets/img/logo.png">
+      <img class="logo" src="/assets/img/logo.png" [routerLink]="['/']">
     </div>
     <div class="header-social">
     </div>
@@ -9,7 +9,7 @@
 </div> <!-- HEADER END -->
 <div class="navbar-container">
   <ul class="navbar-list" (window:resize)="toggleMenuResize()" [ngStyle]="toggleMenu()">
-    <li class="navbar-item"><a class="navbar-link navbar-link-active">Home</a></li>
+    <li class="navbar-item"><a class="navbar-link navbar-link-active" [routerLink]="['/']">Home</a></li>
     <li class="navbar-item"><a class="navbar-link">Reviews</a></li>
     <li class="navbar-item"><a class="navbar-link">Blog</a></li>
     <li class="navbar-item">
