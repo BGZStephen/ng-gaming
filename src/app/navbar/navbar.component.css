@@ -56,7 +56,8 @@
 }
 
 .navbar-item {
-
+  display: flex;
+  align-items: center;
 }
 
 .navbar-link {
@@ -77,6 +78,24 @@
 .navbar-menu-toggle {
   margin-left: auto;
   margin-right: 20px;
+}
+
+.navbar-search {
+  padding: 5px 15px;
+  background: none;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 0.9em;
+  color: #eee;
+}
+
+.navbar-search::placeholder {
+  color: #eee;
+}
+
+.navbar-search-icon {
+  color: #eee;
+  margin-left: 5px;
 }
 
 @media (min-width: 768px) {
